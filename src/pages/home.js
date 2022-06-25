@@ -16,6 +16,7 @@ const home = () => {
   heroLead.textContent =
     "Caesarino's is the best place for authentic italian pasta. Our staff is top notch and the atmosphere makes you feel right at home. If you're ever in the mood for pasta, Caesarino's is the place to be!";
   heroMenuLink.textContent = "Our Menu";
+  heroMenuLink.classList.add("menu")
   heroMenuLink.setAttribute("href", "");
 
   hero.append(heroImage, heroHeading, heroLead, heroMenuLink);
