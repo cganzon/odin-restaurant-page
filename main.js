@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/header.js":
+/*!**********************************!*\
+  !*** ./src/components/header.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst header = () => {\r\n  const header = document.createElement(\"header\");\r\n  const restaurantName = document.createElement(\"h1\");\r\n  const nav = document.createElement(\"nav\");\r\n  const navLinkOne = document.createElement(\"a\");\r\n  const navLinkTwo = document.createElement(\"a\");\r\n\r\n  restaurantName.textContent = \"Caesarino's\";\r\n  navLinkOne.textContent = \"Home\";\r\n  navLinkOne.setAttribute(\"href\", \"\");\r\n  navLinkOne.classList.add(\"home\");\r\n  navLinkTwo.textContent = \"Menu\";\r\n  navLinkTwo.setAttribute(\"href\", \"\");\r\n  navLinkTwo.classList.add(\"menu\");\r\n\r\n  nav.append(navLinkOne, navLinkTwo);\r\n  header.append(restaurantName, nav);\r\n\r\n  return header;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/components/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst pageLoad = () => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n\r\n  const header = document.createElement(\"header\");\r\n  const restaurantName = document.createElement(\"h1\");\r\n  const nav = document.createElement(\"nav\");\r\n  const navLinkOne = document.createElement(\"a\");\r\n  const navLinkTwo = document.createElement(\"a\");\r\n\r\n  restaurantName.textContent = \"Caesarino's\";\r\n  navLinkOne.textContent = \"Home\";\r\n  navLinkOne.setAttribute(\"href\", \"\");\r\n  navLinkOne.classList.add(\"home\");\r\n  navLinkTwo.textContent = \"Menu\";\r\n  navLinkTwo.setAttribute(\"href\", \"\");\r\n  navLinkTwo.classList.add(\"menu\");\r\n\r\n  nav.append(navLinkOne, navLinkTwo);\r\n  header.append(restaurantName, nav);\r\n\r\n  contentDiv.append(header);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst pageLoad = () => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n\r\n  contentDiv.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
 
 /***/ })
 
