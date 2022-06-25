@@ -4,6 +4,7 @@ const header = () => {
   const tabsList = document.createElement("ul");
   const homeTab = document.createElement("li");
   const menuTab = document.createElement("li");
+  const contactTab = document.createElement("li");
 
   restaurantName.textContent = "Caesarino's";
 
@@ -13,8 +14,11 @@ const header = () => {
   menuTab.textContent = "Menu";
   menuTab.classList.add("tab");
   menuTab.setAttribute("id", "menu");
+  contactTab.textContent = "Contact";
+  contactTab.classList.add("tab");
+  contactTab.setAttribute("id", "contact");
 
-  tabsList.append(homeTab, menuTab);
+  tabsList.append(homeTab, menuTab, contactTab);
 
   header.append(restaurantName, tabsList);
 
