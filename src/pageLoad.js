@@ -1,9 +1,9 @@
 import header from "./components/header";
 
-const pageLoad = () => {
+const pageLoad = (page) => {
   const contentDiv = document.querySelector("#content");
 
-  contentDiv.append(header());
+  contentDiv.append(header(), page());
 };
 
 export default pageLoad;

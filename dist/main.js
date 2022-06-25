@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\r\n\r\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _pages_js_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages.js/home */ \"./src/pages.js/home.js\");\n\r\n\r\n\r\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_pages_js_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -36,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst pageLoad = () => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n\r\n  contentDiv.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n\r\n\r\nconst pageLoad = (page) => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n\r\n  contentDiv.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), page());\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
+
+/***/ }),
+
+/***/ "./src/pages.js/home.js":
+/*!******************************!*\
+  !*** ./src/pages.js/home.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst home = () => {\r\n  const hero = document.createElement(\"section\");\r\n  const heroImage = document.createElement(\"img\");\r\n  const heroHeading = document.createElement(\"h2\");\r\n  const heroLead = document.createElement(\"p\");\r\n  const heroMenuLink = document.createElement(\"a\");\r\n\r\n  hero.classList.add(\"hero\");\r\n  heroImage.setAttribute(\r\n    \"src\",\r\n    \"https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80\"\r\n  );\r\n  heroImage.setAttribute(\"alt\", \"\");\r\n  heroHeading.textContent =\r\n    \"Enjoy a variety of freshly made pasta to satisfy your craving\";\r\n  heroLead.textContent =\r\n    \"Caesarino's is the best place for authentic italian pasta. Our staff is top notch and the atmosphere makes you feel right at home. If you're ever in the mood for pasta, Caesarino's is the place to be!\";\r\n  heroMenuLink.textContent = \"Our Menu\";\r\n  heroMenuLink.setAttribute(\"href\", \"\");\r\n\r\n  hero.append(heroImage, heroHeading, heroLead, heroMenuLink);\r\n\r\n  return hero;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pages.js/home.js?");
 
 /***/ })
 
