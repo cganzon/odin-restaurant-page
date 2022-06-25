@@ -1,20 +1,22 @@
 const header = () => {
   const header = document.createElement("header");
   const restaurantName = document.createElement("h1");
-  const nav = document.createElement("nav");
-  const navLinkOne = document.createElement("a");
-  const navLinkTwo = document.createElement("a");
+  const tabsList = document.createElement("ul");
+  const homeTab = document.createElement("li");
+  const menuTab = document.createElement("li");
 
   restaurantName.textContent = "Caesarino's";
-  navLinkOne.textContent = "Home";
-  navLinkOne.setAttribute("href", "");
-  navLinkOne.classList.add("home");
-  navLinkTwo.textContent = "Menu";
-  navLinkTwo.setAttribute("href", "");
-  navLinkTwo.classList.add("menu");
 
-  nav.append(navLinkOne, navLinkTwo);
-  header.append(restaurantName, nav);
+  homeTab.textContent = "Home";
+  homeTab.classList.add("tab");
+  homeTab.setAttribute("id", "home");
+  menuTab.textContent = "Menu";
+  menuTab.classList.add("tab");
+  menuTab.setAttribute("id", "menu");
+
+  tabsList.append(homeTab, menuTab);
+
+  header.append(restaurantName, tabsList);
 
   return header;
 };
