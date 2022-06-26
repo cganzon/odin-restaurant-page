@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.restaurant-name {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tabs li {
+    cursor: pointer;
+}
