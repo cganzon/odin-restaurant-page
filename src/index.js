@@ -15,10 +15,14 @@ const dom = (() => {
 
 dom.tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
+    dom.tabs.forEach(tab => tab.classList.remove("active"))
     dom.contentDiv.textContent = "";
+
     const selectedTab = e.target.id;
     selectedTab === "home" && loadContent(home);
     selectedTab === "menu" && loadContent(menu);
     selectedTab === "contact" && loadContent(contact);
+
+    tab.classList.add("active")
   });
 });

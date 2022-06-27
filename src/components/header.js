@@ -16,7 +16,7 @@ const header = () => {
   tabsList.classList.add("tabs")
 
   homeTab.textContent = "Home";
-  homeTab.classList.add("tab");
+  homeTab.classList.add("tab", "active");
   homeTab.setAttribute("id", "home");
   menuTab.textContent = "Menu";
   menuTab.classList.add("tab");
