@@ -120,23 +120,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/helpers/tabSwitcher.js":
-/*!************************************!*\
-  !*** ./src/helpers/tabSwitcher.js ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/home */ \"./src/pages/home.js\");\n/* harmony import */ var _pages_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/menu */ \"./src/pages/menu.js\");\n/* harmony import */ var _pages_contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/contact */ \"./src/pages/contact.js\");\n\r\n\r\n\r\n\r\n\r\nconst tabSwitcher = () => {\r\n  const tabs = document.querySelectorAll(\".tab\");\r\n  tabs.forEach((tab) => {\r\n    tab.addEventListener(\"click\", (e) => {\r\n      const selectedTab = e.target.id;\r\n      selectedTab === \"home\" && (0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\r\n      selectedTab === \"menu\" && (0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_pages_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\r\n      selectedTab === \"contact\" && (0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_pages_contact__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\r\n    });\r\n  });\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabSwitcher);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/helpers/tabSwitcher.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\r\n\r\n\r\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _loadContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadContent */ \"./src/loadContent.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n/* harmony import */ var _pages_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/menu */ \"./src/pages/menu.js\");\n/* harmony import */ var _pages_contact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/contact */ \"./src/pages/contact.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\nconst dom = (() => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n  const tabs = document.querySelectorAll(\".tab\");\r\n\r\n  return { contentDiv, tabs };\r\n})();\r\n\r\ndom.tabs.forEach((tab) => {\r\n  tab.addEventListener(\"click\", (e) => {\r\n    dom.contentDiv.textContent = \"\";\r\n    const selectedTab = e.target.id;\r\n    selectedTab === \"home\" && (0,_loadContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(_pages_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\r\n    selectedTab === \"menu\" && (0,_loadContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(_pages_menu__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\r\n    selectedTab === \"contact\" && (0,_loadContent__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(_pages_contact__WEBPACK_IMPORTED_MODULE_4__[\"default\"]);\r\n  });\r\n});\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/loadContent.js":
+/*!****************************!*\
+  !*** ./src/loadContent.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst loadContent = tab => {\r\n    const contentDiv = document.querySelector(\"#content\");\r\n    contentDiv.append(tab());\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContent);\n\n//# sourceURL=webpack://odin-restaurant-page/./src/loadContent.js?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _helpers_tabSwitcher__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./helpers/tabSwitcher */ \"./src/helpers/tabSwitcher.js\");\n\r\n\r\n\r\nconst pageLoad = (page) => {\r\n  const contentDiv = document.querySelector(\"#content\");\r\n  contentDiv.textContent = \"\";\r\n  contentDiv.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), page());\r\n  (0,_helpers_tabSwitcher__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\r\n\r\n\r\nconst pageLoad = () => {\r\n  const contentDiv = document.createElement(\"div\");\r\n  contentDiv.setAttribute(\"id\", \"content\");\r\n  contentDiv.append((0,_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n  document.body.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), contentDiv);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 

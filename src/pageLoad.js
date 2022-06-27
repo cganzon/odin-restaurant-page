@@ -1,11 +1,11 @@
 import header from "./components/header";
-import tabSwitcher from "./helpers/tabSwitcher";
+import home from "./pages/home";
 
-const pageLoad = (page) => {
-  const contentDiv = document.querySelector("#content");
-  contentDiv.textContent = "";
-  contentDiv.append(header(), page());
-  tabSwitcher();
+const pageLoad = () => {
+  const contentDiv = document.createElement("div");
+  contentDiv.setAttribute("id", "content");
+  contentDiv.append(home());
+  document.body.append(header(), contentDiv);
 };
 
 export default pageLoad;
