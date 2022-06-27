@@ -1,9 +1,23 @@
+@font-face {
+    font-family: "italianno-regular";
+    src: url("../fonts/Italianno-Regular.ttf");
+}
+
+@font-face {
+    font-family: "italiana-regular";
+    src: url("../fonts/Italiana-Regular.ttf");
+}
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "italiana-regular";
 }
 
 ul {
@@ -16,8 +30,9 @@ ul {
 }
 
 .restaurant-name {
+    font-family: "italianno-regular";
     text-transform: uppercase;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 .header {
@@ -25,7 +40,7 @@ ul {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 5rem;
+    padding: 1.2rem 5rem;
 }
 
 .tabs {
@@ -36,7 +51,9 @@ ul {
 
 .tabs li {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     transition: transform 0.15s;
 }
 
