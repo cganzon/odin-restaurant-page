@@ -1,12 +1,6 @@
-@font-face {
-    font-family: "italianno-regular";
-    src: url("../fonts/Italianno-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
-@font-face {
-    font-family: "italiana-regular";
-    src: url("../fonts/Italiana-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 *,
 *::before,
@@ -17,7 +11,7 @@
 }
 
 body {
-    font-family: "italiana-regular";
+    font-family: "Italiana", serif;
 }
 
 ul {
@@ -30,7 +24,7 @@ ul {
 }
 
 .restaurant-name {
-    font-family: "italianno-regular";
+    font-family: "Italianno", serif;
     text-transform: uppercase;
     font-size: 2.5rem;
 }
