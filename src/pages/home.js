@@ -1,3 +1,5 @@
+import heroImageFile from "../images/hero.png";
+
 const home = () => {
   const homeContent = document.createElement("div");
   homeContent.setAttribute("id", "home-content");
@@ -10,7 +12,7 @@ const home = () => {
   hero.classList.add("hero");
   heroImage.setAttribute(
     "src",
-    "https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80"
+    heroImageFile
   );
   heroImage.setAttribute("alt", "");
   heroHeading.textContent =

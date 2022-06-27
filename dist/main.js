@@ -40,6 +40,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
+/***/ "./src/images/hero.png":
+/*!*****************************!*\
+  !*** ./src/images/hero.png ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/hero.png\");\n\n//# sourceURL=webpack://odin-restaurant-page/./src/images/hero.png?");
+
+/***/ }),
+
 /***/ "./src/css/styles.css":
 /*!****************************!*\
   !*** ./src/css/styles.css ***!
@@ -166,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst home = () => {\r\n  const homeContent = document.createElement(\"div\");\r\n  homeContent.setAttribute(\"id\", \"home-content\");\r\n\r\n  const hero = document.createElement(\"section\");\r\n  const heroImage = document.createElement(\"img\");\r\n  const heroHeading = document.createElement(\"h2\");\r\n  const heroLead = document.createElement(\"p\");\r\n\r\n  hero.classList.add(\"hero\");\r\n  heroImage.setAttribute(\r\n    \"src\",\r\n    \"https://images.unsplash.com/photo-1616299915952-04c803388e5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1062&q=80\"\r\n  );\r\n  heroImage.setAttribute(\"alt\", \"\");\r\n  heroHeading.textContent =\r\n    \"Enjoy a variety of freshly made pasta to satisfy your craving\";\r\n  heroLead.textContent =\r\n    \"Caesarino's is the best place for authentic italian pasta. Our staff is top notch and the atmosphere makes you feel right at home. If you're ever in the mood for pasta, Caesarino's is the place to be!\";\r\n\r\n  hero.append(heroImage, heroHeading, heroLead);\r\n  homeContent.append(hero);\r\n\r\n  return homeContent;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pages/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_hero_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/hero.png */ \"./src/images/hero.png\");\n\r\n\r\nconst home = () => {\r\n  const homeContent = document.createElement(\"div\");\r\n  homeContent.setAttribute(\"id\", \"home-content\");\r\n\r\n  const hero = document.createElement(\"section\");\r\n  const heroImage = document.createElement(\"img\");\r\n  const heroHeading = document.createElement(\"h2\");\r\n  const heroLead = document.createElement(\"p\");\r\n\r\n  hero.classList.add(\"hero\");\r\n  heroImage.setAttribute(\r\n    \"src\",\r\n    _images_hero_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\r\n  );\r\n  heroImage.setAttribute(\"alt\", \"\");\r\n  heroHeading.textContent =\r\n    \"Enjoy a variety of freshly made pasta to satisfy your craving\";\r\n  heroLead.textContent =\r\n    \"Caesarino's is the best place for authentic italian pasta. Our staff is top notch and the atmosphere makes you feel right at home. If you're ever in the mood for pasta, Caesarino's is the place to be!\";\r\n\r\n  hero.append(heroImage, heroHeading, heroLead);\r\n  homeContent.append(hero);\r\n\r\n  return homeContent;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pages/home.js?");
 
 /***/ }),
 
@@ -231,6 +241,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -245,6 +267,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
