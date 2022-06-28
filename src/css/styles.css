@@ -40,6 +40,10 @@ ul {
   padding-bottom: 3px;
 }
 
+#content {
+  margin: 5rem;
+}
+
 .header {
   background-color: #fafafa;
   color: #000;
@@ -74,7 +78,6 @@ ul {
 }
 
 .hero {
-  margin: 5rem;
   display: flex;
   flex-direction: column;
 }
