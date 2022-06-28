@@ -57,3 +57,50 @@ ul {
 .tabs li:hover {
     transform: translateY(-2px);
 }
+
+.hero {
+    letter-spacing: 3px;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    max-width: 60ch;
+    text-align: center;
+    align-self: center;
+}
+
+.hero img {
+    width: 100%;
+    min-width: 30rem;
+    border-radius: 1rem;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.15rem;
+}
+
+@media(min-width: 1200px) {
+    .hero {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .hero img {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+}
