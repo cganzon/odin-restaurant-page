@@ -15,7 +15,7 @@ const dom = (() => {
 
 dom.tabs.forEach((tab) => {
   tab.addEventListener("click", (e) => {
-    dom.tabs.forEach(tab => tab.classList.remove("active"))
+    dom.tabs.forEach((tab) => tab.classList.remove("active"));
     dom.contentDiv.textContent = "";
 
     const selectedTab = e.target.id;
@@ -23,6 +23,6 @@ dom.tabs.forEach((tab) => {
     selectedTab === "menu" && loadContent(menu);
     selectedTab === "contact" && loadContent(contact);
 
-    tab.classList.add("active")
+    tab.classList.add("active");
   });
 });
