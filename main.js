@@ -120,6 +120,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst footer = () => {\r\n  const footer = document.createElement(\"footer\");\r\n  const p = document.createElement(\"p\");\r\n  const a = document.createElement(\"a\");\r\n\r\n  a.textContent = \"cganzon\";\r\n  a.setAttribute(\"href\", \"https://github.com/cganzon\");\r\n  p.textContent = `Created by ${a}`;\r\n\r\n  footer.append(p);\r\n\r\n  return footer;\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/components/footer.js?");
+
+/***/ }),
+
 /***/ "./src/components/header.js":
 /*!**********************************!*\
   !*** ./src/components/header.js ***!
@@ -156,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\r\n\r\n\r\nconst pageLoad = () => {\r\n  const contentDiv = document.createElement(\"div\");\r\n  contentDiv.setAttribute(\"id\", \"content\");\r\n  contentDiv.append((0,_pages_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n  document.body.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), contentDiv);\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/components/header.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer */ \"./src/components/footer.js\");\n/* harmony import */ var _pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home */ \"./src/pages/home.js\");\n\r\n\r\n\r\n\r\nconst pageLoad = () => {\r\n  const contentDiv = document.createElement(\"div\");\r\n  contentDiv.setAttribute(\"id\", \"content\");\r\n  contentDiv.append((0,_pages_home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  document.body.append((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(), contentDiv, (0,_components_footer__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n};\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageLoad);\r\n\n\n//# sourceURL=webpack://odin-restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 
