@@ -1,11 +1,12 @@
 import header from "./components/header";
+import footer from "./components/footer";
 import home from "./pages/home";
 
 const pageLoad = () => {
   const contentDiv = document.createElement("div");
   contentDiv.setAttribute("id", "content");
   contentDiv.append(home());
-  document.body.append(header(), contentDiv);
+  document.body.append(header(), contentDiv, footer());
 };
 
 export default pageLoad;
