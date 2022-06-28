@@ -12,6 +12,8 @@
 
 body {
     font-family: "Italiana", serif;
+    background-color: #000;
+    color: #fff;
 }
 
 ul {
@@ -19,22 +21,23 @@ ul {
 }
 
 .active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ff4242;
     padding-bottom: 3px;
+}
+
+.header {
+    background-color: #fafafa;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 5rem;
 }
 
 .restaurant-name {
     font-family: "Italianno", serif;
     text-transform: uppercase;
     font-size: 2.5rem;
-}
-
-.header {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.2rem 5rem;
+    color: #ff4242;
 }
 
 .tabs {
