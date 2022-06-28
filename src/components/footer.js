@@ -3,9 +3,13 @@ const footer = () => {
   const p = document.createElement("p");
   const a = document.createElement("a");
 
+  footer.classList.add("footer");
+
   a.textContent = "cganzon";
   a.setAttribute("href", "https://github.com/cganzon");
-  p.textContent = `Created by ${a}`;
+  a.setAttribute("target", "_blank");
+  p.textContent = "Created by ";
+  p.append(a);
 
   footer.append(p);
 
