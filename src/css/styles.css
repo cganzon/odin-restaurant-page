@@ -92,6 +92,11 @@ ul {
   border-top-left-radius: 35%;
   border-bottom-right-radius: 35%;
   margin-bottom: 3rem;
+  transition: border-radius 0.2s;
+}
+
+.hero img:hover {
+    border-radius: 1rem;
 }
 
 .hero h2 {
