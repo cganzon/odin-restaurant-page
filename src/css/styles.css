@@ -139,6 +139,7 @@ ul {
 #menu-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  border-bottom: 5px solid #ff4242;
 }
 
 .menu-steps {
