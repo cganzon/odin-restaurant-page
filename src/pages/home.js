@@ -19,9 +19,9 @@ const home = () => {
 
   heroText.classList.add("hero-text");
   heroHeading.textContent =
-    "Enjoy a variety of freshly made pasta to satisfy your craving";
+    "Pasta catered to you";
   heroLead.textContent =
-    "Caesarino's is the best place for authentic italian pasta. Our staff is top notch and the atmosphere makes you feel right at home. If you're ever in the mood for pasta, Caesarino's is the place to be!";
+    "Here at Caesarino's, you decide the kind of pasta we should make. Choose from a wide variety of ingredients to build the perfect dish tailored to your craving";
 
   heroText.append(heroHeading, heroLead)
 
