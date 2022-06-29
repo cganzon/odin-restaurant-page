@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  max-width: 60ch;
+  text-align: center;
+  align-self: center;
+}
+
+.hero img {
+  width: 100%;
+  min-width: 30rem;
+  border-radius: 1rem;
+  border-top-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  margin-bottom: 3rem;
+  transition: border-radius 0.2s;
+}
+
+.hero img:hover {
+  border-radius: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .hero img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+}

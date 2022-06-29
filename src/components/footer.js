@@ -1,3 +1,5 @@
+import "../css/footer.css";
+
 const footer = () => {
   const footer = document.createElement("footer");
   const p = document.createElement("p");

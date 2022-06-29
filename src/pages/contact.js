@@ -1,3 +1,5 @@
+import "../css/contact.css";
+
 const contact = () => {
   const contactContent = document.createElement("div");
   contactContent.setAttribute("id", "contact-content");

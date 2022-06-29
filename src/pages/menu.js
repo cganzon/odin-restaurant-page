@@ -1,4 +1,5 @@
 import makeListItem from "../helpers/makeListItem";
+import "../css/menu.css";
 
 const menu = () => {
   const menuContent = document.createElement("div");

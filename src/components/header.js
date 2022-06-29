@@ -1,4 +1,4 @@
-import "../css/styles.css";
+import "../css/header.css";
 
 const header = () => {
   const header = document.createElement("header");
@@ -8,12 +8,12 @@ const header = () => {
   const menuTab = document.createElement("li");
   const contactTab = document.createElement("li");
 
-  header.classList.add("header")
+  header.classList.add("header");
 
   restaurantName.textContent = "Caesarino's";
   restaurantName.classList.add("restaurant-name");
 
-  tabsList.classList.add("tabs")
+  tabsList.classList.add("tabs");
 
   homeTab.textContent = "Home";
   homeTab.classList.add("tab", "active");
