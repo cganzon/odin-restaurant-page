@@ -1,10 +1,10 @@
-import pageLoad from "./pageLoad";
+import initialPageLoad from "./initialPageLoad";
 import loadContent from "./loadContent";
 import home from "./pages/home";
 import menu from "./pages/menu";
 import contact from "./pages/contact";
 
-pageLoad();
+initialPageLoad();
 
 const dom = (() => {
   const contentDiv = document.querySelector("#content");
