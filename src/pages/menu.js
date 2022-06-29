@@ -4,8 +4,8 @@ const menu = () => {
   const menuContent = document.createElement("div");
   menuContent.setAttribute("id", "menu-content");
 
-  const menuCard = document.createElement("div");
-  menuCard.classList.add("menu-card");
+  const menuSteps = document.createElement("div");
+  menuSteps.classList.add("menu-steps");
 
   const h2 = document.createElement("h2");
   h2.textContent = "Menu";
@@ -78,13 +78,13 @@ const menu = () => {
   stepFour.textContent = "4. Choose your toppings (optional)";
   const stepFourList = document.createElement("ul");
 
+  const peas = makeListItem("Peas");
+  const onion = makeListItem("Onion");
   const zucchini = makeListItem("Zucchini");
   const mushrooms = makeListItem("Sauteed Mushrooms");
   const tomato = makeListItem("Fresh Tomato");
   const peppers = makeListItem("Roasted Peppers");
   const broccoli = makeListItem("Broccoli");
-  const peas = makeListItem("Peas");
-  const onion = makeListItem("Onion");
   const spinach = makeListItem("Spinach");
   const olives = makeListItem("Black Olives");
   const mozzarella = makeListItem("Mozzarella Cheese");
@@ -92,13 +92,13 @@ const menu = () => {
   const ricotta = makeListItem("Ricotta Cheese");
 
   stepFourList.append(
+    peas,
+    onion,
     zucchini,
     mushrooms,
     tomato,
     peppers,
     broccoli,
-    peas,
-    onion,
     spinach,
     olives,
     mozzarella,
@@ -107,15 +107,14 @@ const menu = () => {
   );
   stepFourWrapper.append(stepFour, stepFourList);
 
-  menuCard.append(
-    h2,
+  menuSteps.append(
     stepOneWrapper,
     stepTwoWrapper,
     stepThreeWrapper,
     stepFourWrapper
   );
 
-  menuContent.append(menuCard);
+  menuContent.append(h2, menuSteps);
 
   return menuContent;
 };
