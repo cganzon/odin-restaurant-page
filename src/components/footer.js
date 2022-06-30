@@ -2,18 +2,26 @@ import "../css/footer.css";
 
 const footer = () => {
   const footer = document.createElement("footer");
-  const p = document.createElement("p");
-  const a = document.createElement("a");
-
   footer.classList.add("footer");
 
-  a.textContent = "cganzon";
-  a.setAttribute("href", "https://github.com/cganzon");
-  a.setAttribute("target", "_blank");
-  p.textContent = "Created by ";
-  p.append(a);
+  const creator = document.createElement("p");
+  const creatorLink = document.createElement("a");
 
-  footer.append(p);
+  creatorLink.textContent = "cganzon";
+  creatorLink.setAttribute("href", "https://github.com/cganzon");
+  creatorLink.setAttribute("target", "_blank");
+  creator.textContent = "Created by ";
+  creator.append(creatorLink);
+
+  const attribution = document.createElement("p");
+  const attributionLink = document.createElement("a");
+  attributionLink.textContent = "unsplash.com";
+  attributionLink.setAttribute("href", "https://unsplash.com/");
+  attributionLink.setAttribute("target", "_blank");
+  attribution.textContent = "Image provided by ";
+  attribution.append(attributionLink);
+
+  footer.append(attribution, creator);
 
   return footer;
 };
